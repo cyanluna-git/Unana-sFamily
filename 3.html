@@ -4,32 +4,36 @@
   <title>WEB1 - JavaScript</title>
   <meta charset="utf-8">
   <style>
-  a {
-    color:black;
-    text-decoration: none;
-  }
-  h1 {
-    font-size: 60px;
-    text-align: center;
-    border-bottom:1px solid gray;
-    margin:0;
-    padding:20px;
-  }
-  #active{
-    color:red
-  }
-  .saw{
-    color:grey;
-  }
-  ol {
-    border-right: 1px solid gray;
-    width:100px;
-    margin:0;
-    padding:20px;
-  }
-  body{
-    margin:0;
-  }
+    body{
+      margin:0;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    h1 {
+      font-size:45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    ol{
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      padding-left:33px;
+    }
+    #grid #article{
+      padding-left:25px;
+    }
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115177353-2"></script>
@@ -37,17 +41,18 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-115177353-2');
   </script>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
+<div id="grid">
   <ol>
     <li><a href="1.html">HTML</a></li>
     <li><a href="2.html">CSS</a></li>
     <li><a href="3.html">JavaScript</a></li>
   </ol>
+  <div id="article">
   <h2>JavaScript</h2>
   <p>
     JavaScript (/ˈdʒɑːvəˌskrɪpt/),[8] often abbreviated as JS, is a high-level, interpreted programming language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
@@ -57,5 +62,7 @@
     The terms Vanilla JavaScript and Vanilla JS refer to JavaScript not extended by any frameworks or additional libraries. Scripts written in Vanilla JS are plain JavaScript code.[11][12]
     Although there are similarities between JavaScript and Java, including language name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design. JavaScript was influenced by programming languages such as Self and Scheme.[13] The JSON serialization format, used to store data structures in files or transmit them across networks, is based on JavaScript.[14]
   </p>
+</div>
+</div>
 </body>
 </html>
